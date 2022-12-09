@@ -41,12 +41,14 @@
   присутствует у этого элемента, либо добавить, если такого класса у элемента
   не было.
    */
+
   document.querySelector('.btn')?.classList.toggle('btn-secondary');
 
   /*
   3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
   присутствует класс "menu".
    */
+
   document.querySelector('.menu')?.classList.remove('dropdown-menu');
 
   /*
@@ -54,12 +56,14 @@
   "dropdown" следующую разметку:
     <a href="#">link</a>
    */
+
   document.querySelector('div.dropdown')
     .insertAdjacentHTML('afterend', '<a href="#">link</a>');
 
   /*
   5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
    */
+
   document.getElementById('dropdownMenuButton').id = 'superDropdown';
  
   /*
